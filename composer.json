@@ -1,0 +1,29 @@
+{
+    "name": "open-developer-ext/redis-manager",
+    "description": "Redis manager for open-developer",
+    "type": "library",
+    "keywords": ["open-developer", "redis", "manager"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+        "open-developer/open-developer": ">=1.0.4",
+        "predis/predis": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "laravel/laravel": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenDeveloper\\Developer\\RedisManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OpenDeveloper\\Developer\\RedisManager\\RedisManagerServiceProvider"
+            ]
+
+        }
+    }
+}
